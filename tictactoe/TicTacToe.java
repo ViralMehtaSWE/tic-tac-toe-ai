@@ -55,17 +55,22 @@ public class TicTacToe {
     private static TicTacToeBoardInterface.player choosePlayer(Scanner in) {
         while(true) {
             System.out.println("Select Player: 1 or 2 ?");
+            int playerId = 0;
             try {
-                int playerId = in.nextInt();
-                if (playerId == 1) {
-                    return TicTacToeBoardInterface.player.PLAYER1;
-                } else if (playerId == 2) {
-                    return TicTacToeBoardInterface.player.PLAYER2;
-                }
-                System.out.println("Invalid input! Please try again!");
-            } catch(Exception e) {
-                System.out.println("Invalid input! Please try again!");
+                playerId = in.nextInt();
             }
+            catch(Exception e) {
+                in.next();
+                System.out.println("Invalid input! Please try again!");
+                continue;
+            }
+            if (playerId == 1) {
+                return TicTacToeBoardInterface.player.PLAYER1;
+            } else if (playerId == 2) {
+                return TicTacToeBoardInterface.player.PLAYER2;
+            }
+
+            System.out.println("Invalid input! Please try again!");
         }
     }
 }
