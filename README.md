@@ -9,7 +9,7 @@ To run this code, follow the steps below:
     ##### git clone https://github.com/ViralMehtaSWE/tic-tac-toe-ai.git
 
 2. Compile the source code:
-    ##### cd tic-tac-toe-ai/
+    ##### cd tic-tac-toe-ai/tictactoe/
     ##### javac *.java
 
 3. Run the code:
