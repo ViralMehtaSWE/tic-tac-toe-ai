@@ -16,4 +16,4 @@ To run this code, follow the steps below:
     ##### cd ..
     ##### java tictactoe.TicTacToe
 
-Note: The mentrypoint / main method is inside tic-tac-toe-ai/tictactoe/TicTacToe.java
+Note: The entry point / main method is inside tic-tac-toe-ai/tictactoe/TicTacToe.java
